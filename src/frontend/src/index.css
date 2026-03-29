@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,400;0,700;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* Warm orange primary #D9772A -> oklch approx */
+    --brand-orange: 0.638 0.168 47.2;
+    /* Teal secondary #2AA6A1 -> oklch approx */
+    --brand-teal: 0.638 0.1 196.5;
+    /* Gold star #F5B301 */
+    --brand-gold: 0.83 0.172 83.5;
+
+    --background: 1 0 0;
+    --foreground: 0.145 0 0;
+    --card: 1 0 0;
+    --card-foreground: 0.145 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.145 0 0;
+    --primary: 0.638 0.168 47.2;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.638 0.1 196.5;
+    --secondary-foreground: 1 0 0;
+    --muted: 0.96 0.01 85;
+    --muted-foreground: 0.45 0.02 85;
+    --accent: 0.96 0.02 47;
+    --accent-foreground: 0.638 0.168 47.2;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.9 0.01 85;
+    --input: 0.9 0.01 85;
+    --ring: 0.638 0.168 47.2;
+    --chart-1: 0.638 0.168 47.2;
+    --chart-2: 0.638 0.1 196.5;
+    --chart-3: 0.83 0.172 83.5;
+    --chart-4: 0.398 0.07 227.392;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.638 0.168 47.2;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.96 0.02 47;
+    --sidebar-accent-foreground: 0.638 0.168 47.2;
+    --sidebar-border: 0.9 0.01 85;
+    --sidebar-ring: 0.638 0.168 47.2;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
